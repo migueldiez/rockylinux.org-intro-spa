@@ -124,11 +124,29 @@ footer .inner ul {
     list-style-type: none;
     margin: 0;
     font-size: 14px;
+    display: flex;
 }
+footer .inner ul li {
+    margin: 0 16px;
+}
+footer .inner ul li:last-child { margin: 0 0 0 16px }
+footer .inner ul li:first-child { margin: 0 16px 0 0 }
 footer .inner ul li a {
     color: rgba(0, 0, 0, 0.6);
     text-decoration: none;
 }
 footer .inner ul li i {
     margin-right: 6px;
+}
+
+@media (max-width: 850px) {
+    footer .inner {
+        flex-direction: column;
+        text-align: center;
+    }
+    footer .inner .col:first-child {
+        margin-bottom: 12px;
+    }
+    footer .inner ul { display: block }
+    footer .inner ul li { display: inline }
 }
