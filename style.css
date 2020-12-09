@@ -124,9 +124,9 @@ footer .inner ul {
     list-style-type: none;
     margin: 0;
     font-size: 14px;
-    display: flex;
 }
 footer .inner ul li {
+    display: inline;
     margin: 0 16px;
 }
 footer .inner ul li:last-child { margin: 0 0 0 16px }
